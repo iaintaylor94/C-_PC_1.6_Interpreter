@@ -6,7 +6,7 @@
 class FileIO : public FileHandling {
 
 protected:
-  int numCases;
+  int numberOfCases;
 
   static const int NUM_REGISTERS = 10;
   int registers[NUM_REGISTERS];
@@ -21,6 +21,12 @@ public:
   ~FileIO(void) {};
 
   void initializeCase (void);
+
+  void getNumberOfCases(void);
+  void getInstructions(void);
+
+  void printNumberOfInstructions(void);
+  void printNumberOfInstructions(std::ofstream out);
 };
 
 
