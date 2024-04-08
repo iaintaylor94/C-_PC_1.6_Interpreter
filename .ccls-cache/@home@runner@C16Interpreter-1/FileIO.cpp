@@ -23,7 +23,7 @@ void FileIO::getInstructions () {
       break;
     }
     else {
-      memory.push_back(line);
+      memory.push_back(stoi(line));
     }
   }
 }

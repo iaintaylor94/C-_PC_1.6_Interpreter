@@ -12,10 +12,10 @@ protected:
   int numberOfCases;
 
   static const int NUM_REGISTERS = 10;
-  std::vector<std::string> registers;
+  std::vector<int> registers;
 
   static const int NUM_MEMORY_LOCATIONS = 1000;
-  std::vector<std::string> memory;
+  std::vector<int> memory;
 
   int NumberOfInstructions;
 
