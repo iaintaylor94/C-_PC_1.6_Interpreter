@@ -48,8 +48,9 @@ The input contains a single line containing the number of cases followed by a bl
 3. The program will run the command starting at index '0'
 4. The program will run the next command in the adjacent RAm array index
 5. The case will terminate when the "halt" command is reached
-6. If not all cases have been run, the next case is processed (go to step 2.)
-7. Else terminate program.
+6. The number of instructions commputed is printed to the terminal/file
+7. If not all cases have been run, the next case is processed (go to step 2.)
+8. Else terminate program.
 
 
 ### Bug Checklist

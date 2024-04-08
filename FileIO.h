@@ -14,6 +14,8 @@ protected:
   static const int NUM_MEMORY_LOCATIONS = 1000;
   int memory[NUM_MEMORY_LOCATIONS];
 
+  int NumberOfInstructions;
+
 public:
   FileIO(int argc, char **argv) : FileHandling(argc, argv) {};
   ~FileIO(void) {};

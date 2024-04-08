@@ -8,4 +8,6 @@ void FileIO::initializeCase () {
   for (int i = 0; i < NUM_MEMORY_LOCATIONS; i++) {
     memory[i] = 0;
   }
+
+  NumberOfInstructions = 0;
 }
