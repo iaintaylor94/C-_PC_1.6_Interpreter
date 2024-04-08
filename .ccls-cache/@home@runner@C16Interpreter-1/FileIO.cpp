@@ -1,22 +1,21 @@
 #include "FileIO.h"
 
 void FileIO::initializeCase () {
-  for (int i = 0; i < NUM_REGISTERS; i++) {
-    registers[i] = 0;
-  }
+  registers.clear();
+  registers.resize(NUM_REGISTERS);
 
-  for (int i = 0; i < NUM_MEMORY_LOCATIONS; i++) {
-    memory[i] = 0;
-  }
+  memory.clear();
 
   NumberOfInstructions = 0;
 }
 
 void FileIO::getNumberOfCases() {
-  inFile >> numberOfCases;
+  std::string line;
+  getline(inFile, line);
+  numberOfCases = stoi(line);
+  getline(inFile, line);
 }
 void FileIO::getInstructions () {
-  int instructionIndex = 0;
   while (true) {
     std::string line;
     getline(inFile, line);
@@ -24,14 +23,15 @@ void FileIO::getInstructions () {
       break;
     }
     else {
-      memory[instructionIndex] = std::stoi(line);
-      instructionIndex++;
+      memory.push_back(line);
     }
   }
 }
-
-
-
+void FileIO::printInstructions () {
+  for (auto it = memory.begin(); it != memory.end(); it++) {
+    std::cout << *it << std::endl;
+  }
+}
 void FileIO::printNumberOfInstructions() {
   std::cout << "Number of instructions: " << NumberOfInstructions << std::endl;
 }

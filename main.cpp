@@ -1,10 +1,15 @@
 #include <iostream>
 
-#include "FileHandling.h"
+#include "FileIO.h"
 
 int main(int argc, char *argv[]) {
-  FileHandling fileHandling (argc, argv);
+  FileIO fileIO (argc, argv);
 
+  fileIO.getNumberOfCases();
+  fileIO.initializeCase();
+  fileIO.getInstructions();
+  fileIO.printInstructions();
+  
 
   return 0;
 }
