@@ -11,11 +11,11 @@ The program instructions are of the form:
 5. 5ds - Set register 'd' to the value of register 's'
 6. 6ds - Add the value of register 's' to register 'd'
 7. 7ds - Multiply the value of register 'd' by the value of register 's'
-8. 8da - Set register 'd' to the value in RAM whos address is in register 'a'
+8. 8da - Set register 'd' to the value in RAM whose address is in register 'a'
 9. 9sa - Set the value in RAM whose address is in register 'a' to that of register 's'
 10. 0ds - goto the location in register 'd' unless the register 's' contains 0
 
-The input contains a single line containing the number of cases followed by a blank line. The next lines contain the values in RAM. A blank line indicates the end of the input for that case. TRhe next list of input is the next case. The program will terminate when all cases have been successfully run.
+The input contains a single line containing the number of cases followed by a blank line. The next lines contain the values in RAM. A blank line indicates the end of the input for that case. The next list of input is the next case. The program will terminate when all cases have been successfully run.
 
 
 ### Example 
@@ -29,7 +29,7 @@ The input contains a single line containing the number of cases followed by a bl
 >492                                                
 >495                                                  
 >399                                             
->383                                                
+>283                                                
 >279                                                       
 >689                                                     
 >078                                                      

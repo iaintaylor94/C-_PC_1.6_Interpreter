@@ -4,7 +4,7 @@
 #include "FileIO.h"
 
 class ProcessCase : public FileIO {
-
+  void printProgramState (void);
 
 
 public:

@@ -28,8 +28,11 @@ void FileIO::getInstructions () {
   }
 }
 void FileIO::printInstructions () {
+  std::cout << "Num  Instruction" << std::endl;
+  std::cout << "---  -----------" << std::endl;
   for (auto it = memory.begin(); it != memory.end(); it++) {
-    std::cout << *it << std::endl;
+    std::cout << std::setw(3) << it - memory.begin() << "  ";
+    std::cout << std::setw(11) << *it << std::endl;
   }
 }
 void FileIO::printNumberOfInstructions() {

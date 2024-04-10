@@ -1,15 +1,16 @@
 #include <iostream>
 
-#include "FileIO.h"
+#include "ProcessCase.h"
 
 int main(int argc, char *argv[]) {
-  FileIO fileIO (argc, argv);
+  ProcessCase processCase (argc, argv);
 
-  fileIO.getNumberOfCases();
-  fileIO.initializeCase();
-  fileIO.getInstructions();
-  fileIO.printInstructions();
-  
+  processCase.getNumberOfCases(); std::cout << "getNumberOfCases()" << std::endl;
+  processCase.initializeCase(); std::cout << "initializeCase()" << std::endl;
+  processCase.getInstructions(); std::cout << "getInstructions()" << std::endl;
+  processCase.printInstructions();
+  processCase.processInput(); std::cout << "processInput()" << std::endl;
+  processCase.printNumberOfInstructions(); std::cout << "printNumberOfInstructions()" << std::endl;
 
   return 0;
 }

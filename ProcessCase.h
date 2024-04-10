@@ -4,7 +4,8 @@
 #include "FileIO.h"
 
 class ProcessCase : public FileIO {
-
+  int left, center, right;
+  void printProgramState (void);
 
 
 public:
